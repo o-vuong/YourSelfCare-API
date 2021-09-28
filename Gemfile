@@ -8,7 +8,7 @@ end
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.1.6', '>= 5.1.6.1'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -25,15 +25,15 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.10.8'
 
-gem 'knock'
+gem 'knock', '>= 2.1.1'
 gem 'jwt'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.5.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end
